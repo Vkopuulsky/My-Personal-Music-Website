@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>My Music Collection</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">A</a></li>
+<li><a href="#">Adele</a></li>
+<li><a href="#">Alicia Keys</a></li>
+<li><a href="#">Ariana Grande</a></li>
+
+<li><a href="#" class="header">B</a></li>
+<li><a href="#">Beatles</a></li>
+<li><a href="#">Becky G</a></li>
+<li><a href="#">Black Eyed Peas</a></li>
+<li><a href="#">Britney Spears</a></li>
+
+<li><a href="#" class="header">C</a></li>
+<li><a href="#">Carrie Underwood</a></li>
+<li><a href="#">ChainSmokers</a></li>
+<li><a href="#">Cher Llyod</a></li>
+<li><a href="#">Christina Aguilera</a></li>
+<li><a href="#">Christina Perri</a></li>
+<li><a href="#">Christmas Music</a></li>
+
+<li><a href="#" class="header">D</a></li>
+<li><a href="#">Demi Lovato</a></li>
+<li><a href="#">David Guetta</a></li>
+
+<li><a href="#" class="header">E</a>
+<li><a href="#">Elton John</a></li>
+<li><a href="#">Ed Sheeran</a></li>
+
+<li><a href="#" class="header">F</a>
+<li><a href="#">Fall Out Boy</a></li>
+<li><a href="#">Fifth Harmony</a></li>
+
+<li><a href="#" class="header">G</a>
+<li><a href="#">Gwen Stefanie</a></li>
+<li><a href="#">Gym Class Heroes</a></li>
+
+<li><a href="#" class="header">H</a>
+<li><a href="#">Hootie and The Blowfish</a></li>
+
+<li><a href="#" class="header">I</a>
+<li><a href="#">Imagine Dragons</a></li>
+<li><a href="#">Idena Menzel</a></li>
+<li><a href="#">Iggy Azelea</a></li>
+
+<li><a href="#" class="header">J</a>
+<li><a href="#">Jay Z</a></li>
+<li><a href="#">Jesse J</a></li>
+<li><a href="#">John  Travolta</a></li>
+<li><a href="#">John Lenon</a></li>
+<li><a href="#">Journey</a></li>
+<li><a href="#">John Legend</a></li>
+
+<li><a href="#" class="header">K</a>
+<li><a href="#">Karmin</a></li>
+<li><a href="#">Kiss</a></li>
+<li><a href="#">Katy Perry</a></li>
+<li><a href="#">Kesha</a></li>
+
+<li><a href="#" class="header">L</a>
+<li><a href="#">Lady Gaga</a></li>
+<li><a href="#">Laura Marano</a></li>
+
+<li><a href="#" class="header">M</a>
+<li><a href="#">Mily Cyrus</a></li>
+<li><a href="#">Madonna</a></li>
+<li><a href="#">Maroon 5</a></li>
+<li><a href="#">Megan Trainor</a></li>
+<li><a href="#">Micheal Jackson</a></li>
+
+<li><a href="#" class="header">N</a>
+<li><a href="#">Nirvana</a></li>
+<li><a href="#">Nursery  Rhymes</a></li>
+
+<li><a href="#" class="header">O</a>
+<li><a href="#">One Republic</a></li>
+<li><a href="#">Owl City</a></li>
+<li><a href="#">Outcast</a></li>
+
+<li><a href="#" class="header">P</a>
+ <li><a href="#">Paul McCartney</a></li>
+<li><a href="#">Panic! at the Disco</a></li>
+<li><a href="#">Pink</a></li>
+<li><a href="#">Pink Floyd</a></li>
+<li><a href="#">Prince</a></li>
+
+<li><a href"#" class="header">Q</a>
+<li><a href="#">Queen</a></li>
+
+<li><a href"#" class="header">R</a>
+<li><a href="#">Red Hot Chili Peppers</a></li>
+
+<li><a href"#" class="header">S</a>
+<li><a href="#">Sia</a></li>
+<li><a href="#">Spice Girls</a></li>
+<li><a href="#">Selena Gomez
+   </a></li>
+<li><a href="#">Sam Smith</a></li>
+<li><a href="#">Smashing Pumpkins</a></li>
+
+<li><a href"#" class="header">T</a>
+<li><a href="#">The Weekend</a></li>
+<li><a href="#">Twenty One Pilots</a></li>
+<li><a href="#">The Wanted</a></li>
+
+<li><a href"#" class="header">U</a>
+<li><a href="#">U2</a></li>
+<li><a href="#">Usher</a></li>
+
+<li><a href"#" class="header">V</a>
+<li><a href="#">Vanilla Ice</a></li>
+
+<li><a href"#" class="header">W</a>
+<li><a href="#">Who, The</a></li>
+
+<li><a href"#" class="header">X</a>
+<li><a href="#">X Ambassadors</a></li>
+
+<li><a href"#" class="header">Y</a>
+<li><a href="#">Yellowman</a></li>
+
+<li><a href"#" class="header">Z</a>
+<li><a href="#">Zayn</a></li>
+
+<li><a href"#" class="header">#</a>
+<li><a href="#">5 Seconds of Summer</a></li>
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>
