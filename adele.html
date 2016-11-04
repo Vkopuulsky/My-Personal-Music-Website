@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Adele Albums</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#" class="header">19</a></li>
+  <li><a href="#">DayDreamer</a></li>
+  <li><a href="#">Best For Last</a></li>
+  <li><a href="#">Chasing Pavements</a></li>
+  <li><a href="#">Cold Shoulder</a></li>
+  <li><a href="#">Crazy For You</a></li>
+  <li><a href="#">Melt My Heart To Stone</a></li>
+  <li><a href="#">First Love</a></li>
+  <li><a href="#">Right As Rain</a></li>
+  <li><a href="#">Make You Feel My Love</a></li>
+  <li><a href="#">My Same</a></li>
+  <li><a href="#">Tired</a></li>
+  <li><a href="#">Hometown Glory</a></li>
+  <li><a href="#">That's It, I Quit, I'm Moving On</a></li>
+  <li><a href="#">Now And Then</a></li>
+  <li><a href="#">Painting Pictures</a></li>
+  <li><a href="#">Many Shades Of Black</a></li>
+
+  <li><a href="#" class="header">21</a></li>
+  <li><a href="#">Rolling In The Deep</a></li>
+  <li><a href="#">Rumour Has It</a></li>
+  <li><a href="#">Turning Tables</a></li>
+  <li><a href="#">Don't You Remember</a></li>
+  <li><a href="#">Set Fire To The Rain</a></li>
+  <li><a href="#">He Won't Go</a></li>
+  <li><a href="#">Take It All</a></li>
+  <li><a href="#">I'll be Waiting</a></li>
+  <li><a href="#">One And Only</a></li>
+  <li><a href="#">Lovesong</a></li>
+  <li><a href="#">Someone Like You</a></li>
+  <li><a href="#">I Found A Boy</a></li>
+  <li><a href="#">If It Hadn't Been For Love</a></li>
+  <li><a href="#">Hiding My Heart</a></li>
+  <li><a href="#">Need You Now</a></li>
+
+  <li><a href="#" class="header">25</a></li>
+  <li><a href="#">Hello</a></li>
+  <li><a href="#">Send My Love (To Your New Lover)</a></li>
+  <li><a href="#">I Miss you</a></li>
+  <li><a href="#">When We Were Young</a></li>
+  <li><a href="#">Remedy</a></li>
+  <li><a href="#">Water Under The Bridge</a></li>
+  <li><a href="#">River Lea</a></li>
+  <li><a href="#">Love In the Dark</a></li>
+  <li><a href="#">Million Years Ago</a></li>
+  <li><a href="#">All I Ask</a></li>
+  <li><a href="#">Sweetest Devotion</a></li>
+  <li><a href="#">Can't Let Go</a></li>
+  <li><a href="#">Lay Me Down</a></li>
+  <li><a href="#">Why Do You Love Me</a></li>
+
+<li><a href="#" class="header">Buttons</a></li>
+  <li><a href="htmal.music">Home</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>

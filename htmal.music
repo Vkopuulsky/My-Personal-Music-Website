@@ -53,12 +53,12 @@
 
 <h2>My Music Collection</h2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
 <li><a href="#"class="header">A</a></li>
-<li><a href="#">Adele</a></li>
-<li><a href="#">Alicia Keys</a></li>
+<li><a href="adele.html">Adele</a></li>
 <li><a href="#">Ariana Grande</a></li>
 
 <li><a href="#" class="header">B</a></li>
@@ -183,6 +183,7 @@
 <li><a href"#" class="header">#</a>
 <li><a href="#">30H!3</a></li>
 <li><a href="#">5 Seconds of Summer</a></li>
+
   </ul>
 
 <script>
