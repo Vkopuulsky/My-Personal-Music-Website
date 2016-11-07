@@ -59,7 +59,7 @@ placeholder="Search for names.." title="Type in a name">
 <ul id="myUL">
 <li><a href="#"class="header">A</a></li>
 <li><a href="adele.html">Adele</a></li>
-<li><a href="#">Ariana Grande</a></li>
+<li><a href="ariana.html">Ariana Grande</a></li>
 
 <li><a href="#" class="header">B</a></li>
 <li><a href="#">Bart Baker</a></li>
@@ -89,6 +89,7 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="#">Fifth Harmony</a></li>
 
 <li><a href="#" class="header">G</a>
+<li><a href="#">Green Day</a></li>
 <li><a href="#">Gwen Stefanie</a></li>
 <li><a href="#">Gym Class Heroes</a></li>
 

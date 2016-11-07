@@ -57,5 +57,90 @@
 placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-<li><a href="#"class="header"></a></li>
-<li><a href="adele.html">Adele</a></li>
+<li><a href="#"class="header">Yours Truly</a></li>
+<li><a href="#">Honeymoon Avenue</a></li>
+<li><a href="#">Baby I</a></li>
+<li><a href="#">Right Here</a></li>
+<li><a href="#">Tattooed Heart</a></li>
+<li><a href="#">Lovin' It</a></li>
+<li><a href="#">Piano</a></li>
+<li><a href="#">Daydreamin'</a></li>
+<li><a href="#">The Way</a></li>
+<li><a href="#">You'll Never Know</a></li>
+<li><a href="#">Almost Is Never Enough</a></li>
+<li><a href="#">Popullllar Song</a></li>
+<li><a href="#">Better left Unsaid</a></li>
+<li><a href="#">The Way (Spanglish Version)</a></li>
+
+<li><a href="#"class="header">Christmas Kisses</a></li>
+<li><a href="#">Last Christmas</a></li>
+<li><a href="#">Love Is Everything</a></li>
+<li><a href="#">Snow In California</a></li>
+<li><a href="#">Santa Baby</a></li>
+
+<li><a href="#"class="header">My Everything</a></li>
+<li><a href="#">Intro</a></li>
+<li><a href="#">Problem</a></li>
+<li><a href="#">One Last Time</a></li>
+<li><a href="#">Why Try</a></li>
+<li><a href="#">Break Free</a></li>
+<li><a href="#">Best Mistake</a></li>
+<li><a href="#">Be My Baby</a></li>
+<li><a href="#">Break Your Heart Right Back</a></li>
+<li><a href="#">Love Me Harder</a></li>
+<li><a href="#">Just A Little Bit Of Your Heart</a></li>
+<li><a href="#">Hands On Me</a></li>
+<li><a href="#">My Everything</a></li>
+<li><a href="#">Bang Bang</a></li>
+<li><a href="#">Only 1</a></li>
+<li><a href="#">Yoou Don't Know Me</a></li>
+<li><a href="#">Cadillac Song</a></li>
+<li><a href="#">Too Close</a></li>
+<li><a href="#">Baby I</a></li>
+
+<li><a href="#"class="header">Christmas And Chill</a></li>
+<li><a href="#">Moonlight</a></li>
+<li><a href="#">Dangerous Woman</a></li>
+<li><a href="#">Be Alright</a></li>
+<li><a href="#">Into You</a></li>
+<li><a href="#">Side To Side</a></li>
+<li><a href="#">Let Me Love You</a></li>
+<li><a href="#">Greedy</a></li>
+<li><a href="#">Leave Me Lonely</a></li>
+<li><a href="#">Everyday</a></li>
+<li><a href="#">Sometimes</a></li>
+<li><a href="#">I Don't Care</a></li>
+<li><a href="#">Bad Deciisions</a></li>
+<li><a href="#">Touch It</a></li>
+<li><a href="#">Knew Better/Forever Boy</a></li>
+<li><a href="#">Thinkin' Bout You</a></li>
+<li><a href="#">Focus</a></li>
+<li><a href="#">Step On Up</a></li>
+<li><a href="#">Jason's Song (Gave It Away)</a></li>
+
+<li><a href="#" class="header">Buttons</a></li>
+  <li><a href="htmal.music">Home</a></li>
+</ul>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+
+      }
+  }
+}
+</script>
+
+</body>
+</body>
+</html>
