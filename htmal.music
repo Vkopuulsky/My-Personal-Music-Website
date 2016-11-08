@@ -62,8 +62,8 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="ariana.html">Ariana Grande</a></li>
 
 <li><a href="#" class="header">B</a></li>
-<li><a href="#">Bart Baker</a></li>
-<li><a href="#">Beatles</a></li>
+<li><a href="Baker.html">Bart Baker</a></li>
+<li><a href="beatles.html">Beatles</a></li>
 <li><a href="#">Becky G</a></li>
 <li><a href="#">Black Eyed Peas</a></li>
 <li><a href="#">Britney Spears</a></li>

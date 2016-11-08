@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>My Music Collection</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">Please Please Me</a></li>
+<li><a href="#">I Saw Her Standing There</a></li>
+<li><a href="#">Misery</a></li>
+<li><a href="#">Anna (Go To Him)</a></li>
+<li><a href="#">Chains</a></li>
+<li><a href="#">Boys</a></li>
+<li><a href="#">Ask Me Why</a></li>
+<li><a href="#">Please Please Me</a></li>
+<li><a href="#">Love Me Do</a></li>
+<li><a href="#">P.S. I Love You</a></li>
+<li><a href="#">Baby It's You</a></li>
+<li><a href="#">Do You Want To Know A Secret</a></li>
+<li><a href="#">A Taste Of Honey</a></li>
+<li><a href="#">There's A Place</a></li>
+<li><a href="#">Twist And Shout</a></li>
+
+<li><a href="#" class="header">With The Beatles</a></li>
+<li><a href="#">It Won't Be Long</a></li>
+<li><a href="#">All I've Got To Do</a></li>
+<li><a href="#">All My Loving</a></li>
+<li><a href="#">Don't Bother Me</a></li>
+<li><a href="#">Little Child</a></li>
+<li><a href="#">Till There Was You</a></li>
+<li><a href="#">Please Mister Postman</a></li>
+<li><a href="#">Roll Over Beethoven</a></li>
+<li><a href="#">Hold Me Tight</a></li>
+<li><a href="#">You Really Got A Hold On Me</a></li>
+<li><a href="#">I Want To Be Your Man</a></li>
+<li><a href="#">Devil In Your Heart</a></li>
+<li><a href="#">Not A Second Time</a></li>
+<li><a href="#">Money (That's What I Want)</a></li>
+
+<li><a href="#" class="header">A Hard Day's Night</a></li>
+<li><a href="#">A Hard Day's Night</a></li>
+<li><a href="#">I Should Have Known Better</a></li>
+<li><a href="#">If I Fell</a></li>
+<li><a href="#">I'm Just Happy To Dance With You</a></li>
+<li><a href="#">And I Love Her</a></li>
+<li><a href="#">Tell  Me Why</a></li>
+<li><a href="#">Can't Buy Love</a></li>
+<li><a href="#">Any Time At All</a></li>
+<li><a href="#">I'll Cry Instead</a></li>
+<li><a href="#">Things We Said Today</a></li>
+<li><a href="#">When I Get Home</a></li>
+<li><a href="#">You Can't Do That</a></li>
+<li><a href="#">I'll Be Back</a></li>
+
+<li><a href="#" class="header">Beatles For Sale</a></li>
+<li><a href="#">No Reply</a></li>
+<li><a href="#">I'm A Loser</a></li>
+<li><a href="#">Baby' In Black</a></li>
+<li><a href="#">Rock And Roll Music</a></li>
+<li><a href="#">I'll Follow The Sun</a></li>
+<li><a href="#">Mr. Moonlight</a></li>
+<li><a href="#">(Medley):Kansas City/Hey, Hey, Hey, Hey</a></li>
+<li><a href="#">Eight Days A Week</a></li>
+<li><a href="#">Words Of Love</a></li>
+<li><a href="#">Honey Don't</a></li>
+<li><a href="#">Every Little Thing</a></li>
+<li><a href="#">I Don't Want To Spoil The Party</a></li>
+<li><a href="#">What You're Doing</a></li>
+<li><a href="#">Everybody's Trying To Be My Baby</a></li>
+
+<li><a href="#" class="header">Help!</a></li>
+<li><a href="#">Help!</a></li>
+<li><a href="#">The Night Before</a></li>
+<li><a href="#">You've Got To Hide Your Love Away</a></li>
+<li><a href="#">I Need You</a></li>
+<li><a href="#">Another Girl</a></li>
+<li><a href="#">You're Going To Lose That Girl</a></li>
+<li><a href="#">Ticket To Ride</a></li>
+<li><a href="#">Act Naturally</a></li>
+<li><a href="#">It's Only Love</a></li>
+<li><a href="#">You Like Me Too Much</a></li>
+<li><a href="#">Tell Me What You See</a></li>
+<li><a href="#">I've Just  Seen A Face</a></li>
+<li><a href="#">Yesterday</a></li>
+<li><a href="#">Dizzy Miss Lizzy</a></li>
+
+<li><a href="#" class="header">Rubber Soul</a></li>
+<li><a href="#">Drive My Car</a></li>
+<li><a href="#">Norwegian Wood (This Bird Has Flown)</a></li>
+<li><a href="#">You Won't See Me</a></li>
+<li><a href="#">Nowhere Man</a></li>
+<li><a href="#">Think For Yourself</a></li>
+<li><a href="#">The Word</a></li>
+<li><a href="#">Michelle</a></li>
+<li><a href="#">What Goes On</a></li>
+<li><a href="#">Girl</a></li>
+<li><a href="#">I'm Looking Through You</a></li>
+<li><a href="#">In My Life</a></li>
+<li><a href="#">Wait</a></li>
+<li><a href="#">If I Needed Someone</a></li>
+<li><a href="#">Ruun For Your Life</a></li>
+
+<li><a href="#" class="header">Revolver</a></li>
+<li><a href="#">Taxman</a></li>
+<li><a href="#">Eleanor Rigby</a></li>
+<li><a href="#">I'm Only Sleeping</a></li>
+<li><a href="#">Love You To</a></li>
+<li><a href="#">Here, There And Everywhere</a></li>
+<li><a href="#">Yellow Submarine</a></li>
+<li><a href="#">She Said, She Said</a></li>
+<li><a href="#">Good Day SunShine</a></li>
+<li><a href="#">And Your Bird Can Sing</a></li>
+<li><a href="#">For No One</a></li>
+<li><a href="#">Doctor Robert</a></li>
+<li><a href="#">I Want To Tell You</a></li>
+<li><a href="#">Got To Get You Into My Life</a></li>
+<li><a href="#">Tomorrow Never Knows</a></li>
+
+<li><a href="#" class="header">Sgt. Pepper's Lonely Heart's Club Band</a></li>
+<li><a href="#">Sgt. pepper's Lonely Heart's Club band</a></li>
+<li><a href="#">With A Little Help From My Friends</a></li>
+<li><a href="#">Lucky In The Sky With Diamonds</a></li>
+<li><a href="#">Getting Better</a></li>
+<li><a href="#">Fixing A Hole</a></li>
+<li><a href="#">She's Leaving Home</a></li>
+<li><a href="#">Being For The Benefit Of Mr.Kite!</a></li>
+<li><a href="#">Within You Without You</a></li>
+<li><a href="#">When I'm Sixty Four</a></li>
+<li><a href="#">Lovely Rita</a></li>
+<li><a href="#">Good Morning, Good Morning</a></li>
+<li><a href="#">Sgt. Pepper's Lonely Heart's Club Band (Reprise)</a></li>
+<li><a href="#">A Day In The Life</a></li>
+
+<li><a href="#" class="header">Br Sale</a></li>
+<li><a href="#">No Reply</a></li>
+<li><a href="#">I'm A Loser</a></li>
+<li><a href="#">Baby' In Black</a></li>
+<li><a href="#">Rock And Roll Music</a></li>
+<li><a href="#">I'll Follow The Sun</a></li>
+<li><a href="#">Mr. Moonlight</a></li>
+<li><a href="#">(Medley):Kansas City/Hey, Hey, Hey, Hey</a></li>
+<li><a href="#">Eight Days A Week</a></li>
+<li><a href="#">Words Of Love</a></li>
+<li><a href="#">Honey Don't</a></li>
+<li><a href="#">Every Little Thing</a></li>
+<li><a href="#">I Don't Want To Spoil The Party</a></li>
+<li><a href="#">What You're Doing</a></li>
+<li><a href="#">Everybody's Trying To Be My Baby</a></li>
+
+<li><a href="#" class="header">Buttons</a></li>
+<li><a href="htmal.music">Home</a></li>
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>
