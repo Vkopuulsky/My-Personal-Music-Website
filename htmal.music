@@ -69,9 +69,9 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="brit.html">Britney Spears</a></li>
 
 <li><a href="#" class="header">C</a></li>
-<li><a href="#">Carrie Underwood</a></li>
-<li><a href="#">ChainSmokers</a></li>
-<li><a href="#">Cher Llyod</a></li>
+<li><a href="carrie.html">Carrie Underwood</a></li>
+<li><a href="cs.html">ChainSmokers</a></li>
+<li><a href="cher.html">Cher Llyod</a></li>
 <li><a href="#">Christina Aguilera</a></li>
 <li><a href="#">Christina Perri</a></li>
 <li><a href="#">Christmas Music</a></li>
