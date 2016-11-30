@@ -73,8 +73,8 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="cs.html">ChainSmokers</a></li>
 <li><a href="cher.html">Cher Llyod</a></li>
 <li><a href="chris.html">Christina Aguilera</a></li>
-<li><a href="#">Christina Perri</a></li>
-<li><a href="#">Christmas Music</a></li>
+<li><a href="cp.html">Christina Perri</a></li>
+<li><a href="christmas.html">Christmas Music</a></li>
 
 <li><a href="#" class="header">D</a></li>
 <li><a href="#">David Guetta</a></li>

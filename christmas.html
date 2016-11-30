@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Carrie Underwood</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">Christmas Music</a></li>
+<li><a href="#">White Christmas</a></li>
+<li><a href="#">O Holy Night</a></li>
+<li><a href="#">Santa Claus Is Comin' To Town</a></li>
+<li><a href="#">Have Yourself A Merry Little Christmas</a></li>
+<li><a href="#">Little Drummer Boy</a></li>
+<li><a href="#">Hark! The Harold Angels Sing</a></li>
+<li><a href="#">Rockin' Around The Christmas Tree</a></li>
+<li><a href="#">Away In A Manger</a></li>
+<li><a href="#">Do You Hear What I Hear</a></li>
+<li><a href="#">What Chilld Is This?</a></li>
+<li><a href="#">All I Want For Christmas Is You</a></li>
+<li><a href="#">I'll Be Home For Christmas</a></li>
+<li><a href="#">A Holly Jolly Christmas</a></li>
+<li><a href="#">Santa Baby</a></li>
+<li><a href="#">Last Christmas (The Pudding Mix)</a></li>
+<li><a href="#">Grandma Got Ran Over By A Reindeer</a></li>
+<li><a href="#">Rudolph The  Red Nosed Reindeer</a></li>
+<li><a href="#">Baby It's Cold Outside</a></li>
+<li><a href="#">Mary Did You Know</a></li>
+<li><a href="#">Jingle Bells</a></li>
+<li><a href="#">Let It Snow</a></li>
+<li><a href="#">Winter Wonderland</a></li>
+<li><a href="#">Twelve Days Of Christmas</a></li>
+<li><a href="#">Feliz Navidad</a></li>
+<li><a href="#">Santa Claus Is Coming To Town</a></li>
+
+<li><a href"#" class="header">Buttons</a>
+<li><a href="htmal.music">Home</a></li>
+
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>
