@@ -77,7 +77,7 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="christmas.html">Christmas Music</a></li>
 
 <li><a href="#" class="header">D</a></li>
-<li><a href="#">David Guetta</a></li>
+<li><a href="david,html">David Guetta</a></li>
 <li><a href="#">Demi Lovato</a></li>
 
 <li><a href="#" class="header">E</a>
