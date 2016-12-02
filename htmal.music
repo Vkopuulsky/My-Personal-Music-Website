@@ -81,7 +81,7 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="demi.html">Demi Lovato</a></li>
 
 <li><a href="#" class="header">E</a>
-<li><a href="#">Ed Sheeran</a></li>
+<li><a href="ed.html">Ed Sheeran</a></li>
 <li><a href="#">Elton John</a></li>
 
 <li><a href="#" class="header">F</a>
