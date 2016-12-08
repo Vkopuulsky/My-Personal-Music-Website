@@ -85,7 +85,7 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="ej.html">Elton John</a></li>
 
 <li><a href="#" class="header">F</a>
-<li><a href="#">Fall Out Boy</a></li>
+<li><a href="FOB.html">Fall Out Boy</a></li>
 <li><a href="#">Fifth Harmony</a></li>
 
 <li><a href="#" class="header">G</a>
