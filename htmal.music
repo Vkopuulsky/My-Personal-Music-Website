@@ -86,10 +86,10 @@ placeholder="Search for names.." title="Type in a name">
 
 <li><a href="#" class="header">F</a>
 <li><a href="FOB.html">Fall Out Boy</a></li>
-<li><a href="#">Fifth Harmony</a></li>
+<li><a href="fifth.html">Fifth Harmony</a></li>
 
 <li><a href="#" class="header">G</a>
-<li><a href="#">Gwen Stefanie</a></li>
+<li><a href="gwen.html">Gwen Stefanie</a></li>
 <li><a href="#">Gym Class Heroes</a></li>
 
 <li><a href="#" class="header">H</a>

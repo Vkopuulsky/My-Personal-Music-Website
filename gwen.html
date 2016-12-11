@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Carrie Underwood</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">Love, Angel, Music, Baby</a></li>
+<li><a href="#">What You Waiting For?</a></li>
+<li><a href="#">Rich Girl</a></li>
+<li><a href="#">Hollaback  Girl</a></li>
+<li><a href="#">Cool</a></li>
+<li><a href="#">Bubble Pop Electric</a></li>
+<li><a href="#">Luxurious</a></li>
+<li><a href="#">Harajuku Girls</a></li>
+<li><a href="#">Crash</a></li>
+<li><a href="#">The Real Thing</a></li>
+<li><a href="#">Serious</a></li>
+<li><a href="#">Danger Zone</a></li>
+<li><a href="#">Long Way To Go</a></li>
+
+<li><a href="#" class="header">The Sweet Escape</a></li>
+<li><a href="#">Wind It Up</a></li>
+<li><a href="#">The Sweet Escape</a></li>
+<li><a href="#">Orange County Girl</a></li>
+<li><a href="#">Early Winter</a></li>
+<li><a href="#">Now That You Got It</a></li>
+<li><a href="#">4 In The Morning</a></li>
+<li><a href="#">Yummy</a></li>
+<li><a href="#">Fluorescent</a></li>
+<li><a href="#">Breakin' Up</a></li>
+<li><a href="#">Don't Get It Twisted</a></li>
+<li><a href="#">U Started It</a></li>
+<li><a href="#">Wonderful Life</a></li>
+
+<li><a href="#" class="header">This Is What The Truth Feels Like...</a></li>
+<li><a href="#">Misery</a></li>
+<li><a href="#">You're My Favorite</a></li>
+<li><a href="#">Where Would I Be?</a></li>
+<li><a href="#">Make Me Like You</a></li>
+<li><a href="#">Truth</a></li>
+<li><a href="#">Used To Love You</a></li>
+<li><a href="#">Send Me A Picture</a></li>
+<li><a href="#">Red Flag</a></li>
+<li><a href="#">Asking For It</a></li>
+<li><a href="#">Naughty</a></li>
+<li><a href="#">Me Without You</a></li>
+<li><a href="#">Rare</a></li>
+<li><a href="#">Rocket Ship</a></li>
+<li><a href="#">Getting Warmer</a></li>
+<li><a href="#">Obsessed</a></li>
+<li><a href="#">Splash</a></li>
+<li><a href="#">Loveable</a></li>
+<li><a href="#">War Paint</a></li>
+
+<li><a href"#" class="header">Buttons</a>
+<li><a href="htmal.music">Home</a></li>
+
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>
