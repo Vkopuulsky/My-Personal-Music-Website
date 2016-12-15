@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Imagine Dragons</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">Speak To Me</a></li>
+<li><a href="#">Pistol Whip</a></li>
+<li><a href="#">Living Musical</a></li>
+<li><a href="#">The Pit</a></li>
+<li><a href="#">Speak To Me</a></li>
+<li><a href="#">Boots</a></li>
+
+<li><a href="#" class="header">Imagine Dragons</a></li>
+<li><a href="#">I Need A Minute</a></li>
+<li><a href="#">Uptight</a></li>
+<li><a href="#">Cover Up</a></li>
+<li><a href="#">Curse</a></li>
+<li><a href="#">Drive</a></li>
+
+<li><a href="#" class="header">Hell And Silence</a></li>
+<li><a href="#">All Eyes</a></li>
+<li><a href="#">I Don't Mind</a></li>
+<li><a href="#">Hear Me</a></li>
+<li><a href="#">Selene</a></li>
+<li><a href="#">Emma</a></li>
+
+<li><a href="#" class="header">It's Time</a></li>
+<li><a href="#">It's Time</a></li>
+<li><a href="#">Amsterdam</a></li>
+<li><a href="#">Tokyo</a></li>
+<li><a href="#">The River</a></li>
+<li><a href="#">Leave Me</a></li>
+<li><a href="#">Patomime</a></li>
+<li><a href="#">Look How Far We've Come</a></li>
+<li><a href="#">America</a></li>
+
+<li><a href="#" class="header">Continued Silence</a>
+<li><a href="#">Radioactive</a></li>
+<li><a href="#">Demons</a></li>
+<li><a href="#">On Top Of The World</a></li>
+<li><a href="#">Round And Round</a></li>
+<li><a href="#">It's Time</a></li>
+<li><a href="#">My Fault</a></li>
+
+<li><a href="#" class="header">Night Visions</a></li>
+<li><a href="#">Radioactive</a></li>
+<li><a href="#">Tiptoe</a></li>
+<li><a href="#">It's Time</a></li>
+<li><a href="#">Demons</a></li>
+<li><a href="#">On Top Of The World</a></li>
+<li><a href="#">Hear Me</a></li>
+<li><a href="#">Amsterdam</a></li>
+<li><a href="#">Every Night</a></li>
+<li><a href="#">Bleeding Out</a></li>
+<li><a href="#">Underdog</a></li>
+<li><a href="#">Nothing Left To Say</a></li>
+<li><a href="#">Rocks</a></li>
+<li><a href="#">Working man</a></li>
+<li><a href="#">Fallen</a></li>
+<li><a href="#">Cha-Ching (Till We Grow Older)</a></li>
+
+<li><a href="#" class="header">Smoke + Mirrors</a></li>
+<li><a href="#">Womanizer</a></li>
+<li><a href="#">Circus</a></li>
+<li><a href="#">Out From Under</a></li>
+<li><a href="#">Kill The Lights</a></li>
+<li><a href="#">Shattered Glass</a></li>
+<li><a href="#">If U Seek Amy</a></li>
+<li><a href="#">Unusual You</a></li>
+<li><a href="#">Blur</a></li>
+<li><a href="#">Mmm Papi</a></li>
+<li><a href="#">Mannequin</a></li>
+<li><a href="#">Lace And Leather</a></li>
+<li><a href="#">My Baby</a></li>
+<li><a href="#">Radar</a></li>
+<li><a href="#">Rock Me In</a></li>
+<li><a href="#">Phonography</a></li>
+<li><a href="#">Quicksand</a></li>
+<li><a href="#">Amnesia</a></li>
+<li><a href="#">Trouble</a></li>
+<li><a href="#">Rock Boy</a></li>
+
+<li><a href="#" class="header">Femme Fatale</a></li>
+<li><a href="#">Till The World Ends</a></li>
+<li><a href="#">Hold It Against Me</a></li>
+<li><a href="#">Inside Out</a></li>
+<li><a href="#">I Wanna Go</a></li>
+<li><a href="#">How I Roll</a></li>
+<li><a href="#">(Drop Dead) Beautiful</a></li>
+<li><a href="#">Seal It With A Kiss</a></li>
+<li><a href="#">Big Fat Bass</a></li>
+<li><a href="#">Trouble For Me</a></li>
+<li><a href="#">Trip To Your Heart</a></li>
+<li><a href="#">Gasoline</a></li>
+<li><a href="#">Criminal</a></li>
+<li><a href="#">Up N' Down</a></li>
+<li><a href="#">He About To Lose Me</a></li>
+<li><a href="#">Selfish</a></li>
+<li><a href="#">Don't Keep Me Waiting</a></li>
+<li><a href="#">Scary</a></li>
+
+<li><a href="#" class="header">B In The Mix: The Remixes Vol. 2</a></li>
+<li><a href="#">Criminal (Radio Mix)</a></li>
+<li><a href="#">Gimme More (Kaskade Club Mix)</a></li>
+<li><a href="#">Piece Of Me (Tiesto Club Mix)</a></li>
+<li><a href="#">Radar (Tonal Club Mix)</a></li>
+<li><a href="#">Womanizer (Benny Benassi Extended)</a></li>
+<li><a href="#">Circus (Linus Loves Remix)</a></li>
+<li><a href="#">If U Seek Amy (U-Tern Remix)</a></li>
+<li><a href="#">3 (Manhattan Clique Club Remix)</a></li>
+<li><a href="#">Till The World Ends (Alex Suarez Club Remix)</a></li>
+<li><a href="#">I Wanna Go (Gareth Emery Remix)</a></li>
+
+<li><a href="#" class="header">Britney Jean</a></li>
+<li><a href="#">Alien</a></li>
+<li><a href="#">Work Bitch</a></li>
+<li><a href="#">Perfume</a></li>
+<li><a href="#">It Should Be Easy</a></li>
+<li><a href="#">Tik Tik Boom</a></li>
+<li><a href="#">Body Ache</a></li>
+<li><a href="#">Til It's Gone</a></li>
+<li><a href="#">Passenger</a></li>
+<li><a href="#">Chillin' With You</a></li>
+<li><a href="#">Don't Cry</a></li>
+<li><a href="#">Brightest Morning Star</a></li>
+<li><a href="#">Hold On Tight</a></li>
+<li><a href="#">Now That I Found You</a></li>
+
+<li><a href="#" class="header">Glory</a></li>
+<li><a href="#">Invitation</a></li>
+<li><a href="#">Make Me...</a></li>
+<li><a href="#">Private Show</a></li>
+<li><a href="#">Man On The Moon</a></li>
+<li><a href="#">Just Luv Me</a></li>
+<li><a href="#">Clumsy</a></li>
+<li><a href="#">Do You Wanna Come Over</a></li>
+<li><a href="#">Slumber Party</a></li>
+<li><a href="#">Just Like Me</a></li>
+<li><a href="#">Love Me Down</a></li>
+<li><a href="#">Hard To Forget Ya</a></li>
+<li><a href="#">What You Need</a></li>
+<li><a href="#">Better</a></li>
+<li><a href="#">Change Your Mind (No Seas Cortes)</a></li>
+<li><a href="#">Liar</a></li>
+<li><a href="#">If I'm Dancing</a></li>
+<li><a href="#">Coupure Electrique</a></li>
+<li><a href="#">Mood Ring</a></li>
+<li><a href="#">Slumber Party</a></li>
+
+<li><a href"#" class="header">Buttons</a>
+<li><a href="htmal.music">Home</a></li>
+
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>
