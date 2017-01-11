@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Karmin</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">The Winslow Sessions</a></li>
+<li><a href="#">Everything Is Right</a></li>
+<li><a href="#">Remebered</a></li>
+<li><a href="#">Carbon Copy</a></li>
+<li><a href="#">Gold</a></li>
+<li><a href="#">Take It Away</a></li>
+<li><a href="#">I Suppose</a></li>
+<li><a href="#">You Can Tell Me</a></li>
+
+<li><a href="#" class="header">Karmin Covers, Vol. 1</a></li>
+<li><a href="#">6 Foot 7 Foot</a></li>
+<li><a href="#">Born This Way</a></li>
+<li><a href="#">Circle The Drain</a></li>
+<li><a href="#">DJ Got Us Fallin' In Love</a></li>
+<li><a href="#">Firework</a></li>
+<li><a href="#">Forget You</a></li>
+<li><a href="#">Grenade</a></li>
+<li><a href="#">Hold It Agaiinst Me</a></li>
+<li><a href="#">I Need A Doctor</a></li>
+<li><a href="#">Jar Of Hearts</a></li>
+<li><a href="#">Just A Kiss</a></li>
+<li><a href="#">King Of Anything</a></li>
+<li><a href="#">King Of Wishful Thinking</a></li>
+<li><a href="#">Less Than Perfect</a></li>
+<li><a href="#">Look At Me Now</a></li>
+<li><a href="#">Mine</a></li>
+<li><a href="#">Misery</a></li>
+<li><a href="#">Only Girl</a></li>
+<li><a href="#">Price Tag</a></li>
+<li><a href="#">Set Fire To The Rain</a></li>
+<li><a href="#">Stuck Like Glue</a></li>
+<li><a href="#">Teenage Dream</a></li>
+<li><a href="#">Tonight (I'm Lovin' You)</a></li>
+<li><a href="#">What's My Name?</a></li>
+<li><a href="#">Whip My Hair</a></li>
+<li><a href="#">Written In The Stars</a></li>
+<li><a href="#">Your Love</a></li>
+
+<li><a href="#" class="header">Hello</a></li>
+<li><a href="#">Walking On The Moon</a></li>
+<li><a href="#">Brokenhearted</a></li>
+<li><a href="#">I Told You So</a></li>
+<li><a href="#">Too Many Fish</a></li>
+<li><a href="#">I'm Just Sayin'</a></li>
+<li><a href="#">Coming Up Strong</a></li>
+<li><a href="#">Hello</a></li>
+
+<li><a href="#" class="header">Pulses</a>
+<li><a href="#">Geronimo Intro</a></li>
+<li><a href="#">Pulses</a></li>
+<li><a href="#">Acapella</a></li>
+<li><a href="#">I Want It All</a></li>
+<li><a href="#">Night Like This</a></li>
+<li><a href="#">Neon Love</a></li>
+<li><a href="#">Drifter</a></li>
+<li><a href="#">Tidal Wave</a></li>
+<li><a href="#">Gasoline</a></li>
+<li><a href="#">Puppet</a></li>
+<li><a href="#">Hate To Love You</a></li>
+<li><a href="#">Try Me On</a></li>
+<li><a href="#">What's In It For Me</a></li>
+
+<li><a href="#" class="header">Leo Rising</a>
+<li><a href="#">Dance With You</a></li>
+<li><a href="#">Sugar</a></li>
+<li><a href="#">Didn't Know You</a></li>
+<li><a href="#">No Suitcase</a></li>
+<li><a href="#">Come With Me (Pure Imagination)</a></li>
+<li><a href="#">Everything</a></li>
+<li><a href="#">Along The Road</a></li>
+<li><a href="#">Can't Live</a></li>
+<li><a href="#">Blame It On My Heart</a></li>
+<li><a href="#">Save Me Now</a></li>
+<li><a href="#">Easy Money</a></li>
+<li><a href="#">I Got You</a></li>
+<li><a href="#">Love Is Louder</a></li>
+
+<li><a href"#" class="header">Buttons</a>
+<li><a href="htmal.music">Home</a></li>
+
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>

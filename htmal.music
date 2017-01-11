@@ -108,7 +108,7 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="#">John Legend</a></li>
 
 <li><a href="#" class="header">K</a>
-<li><a href="#">Karmin</a></li>
+<li><a href="karmin.html">Karmin</a></li>
 <li><a href="#">Kiss</a></li>
 <li><a href="#">Katy Perry</a></li>
 <li><a href="#">Kesha</a></li>
