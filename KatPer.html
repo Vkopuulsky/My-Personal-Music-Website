@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Katy Perry</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#"class="header">Kate Hudson</a></li>
+<li><a href="#">Trust In Me</a></li>
+<li><a href="#">Piercing</a></li>
+<li><a href="#">Search Me</a></li>
+<li><a href="#">Last Call</a></li>
+<li><a href="#">Growing Pain</a></li>
+<li><a href="#">My Own Monster</a></li>
+<li><a href="#">Spit</a></li>
+<li><a href="#">Faith Won't Fail</a></li>
+<li><a href="#">Naturally</a></li>
+<li><a href="#">When There's Nothing Left</a></li>
+
+<li><a href="#" class="header">One Of The Boys</a></li>
+<li><a href="#">One Of The Boys</a></li>
+<li><a href="#">I Kissed A Girl</a></li>
+<li><a href="#">Waking Up In Vegas</a></li>
+<li><a href="#">Thinking Of You</a></li>
+<li><a href="#">Mannequin</a></li>
+<li><a href="#">Ur So Gay</a></li>
+<li><a href="#">Hot N Cold</a></li>
+<li><a href="#">If You Can Afford Me</a></li>
+<li><a href="#">Lost</a></li>
+<li><a href="#">Self Inflicted</a></li>
+<li><a href="#">I'm Still Breathing</a></li>
+<li><a href="#">Fingerprints</a></li>
+<li><a href="#">I Think I'm Ready</a></li>
+<li><a href="#">A Cup Of Coffee</a></li>
+
+<li><a href="#" class="header">Teenage Dream</a></li>
+<li><a href="#">Teenage Dream</a></li>
+<li><a href="#">Last Friday Night (T.G.I.F.)</a></li>
+<li><a href="#">California Gurls</a></li>
+<li><a href="#">Firework</a></li>
+<li><a href="#">Peacock</a></li>
+<li><a href="#">Circle The Drain</a></li>
+<li><a href="#">The One That Got Away</a></li>
+<li><a href="#">E.T.</a></li>
+<li><a href="#">Who Am I Living For?</a></li>
+<li><a href="#">Pearl</a></li>
+<li><a href="#">Hummingbird Heartbeat</a></li>
+<li><a href="#">Not Like The Movies</a></li>
+<li><a href="#">The One That Got Away (Acoustic)</a></li>
+<li><a href="#">Part Of Me</a></li>
+<li><a href="#">Wide Awake</a></li>
+<li><a href="#">Dressin' Up</a></li>
+<li><a href="#">E.T. (Remix)</a></li>
+<li><a href="#">Last Friday Night (T.G.I.F.) (Remix)</a></li>
+<li><a href="#">Tommie Sunshine's Megasix Smash-Up</a></li>
+
+<li><a href="#" class="header">Prism</a>
+<li><a href="#">Roar</a></li>
+<li><a href="#">Legendary Lovers</a></li>
+<li><a href="#">Birthday</a></li>
+<li><a href="#">Walkinig On Air</a></li>
+<li><a href="#">Unconditionally</a></li>
+<li><a href="#">Dark Horse</a></li>
+<li><a href="#">This Is How We Do</a></li>
+<li><a href="#">International Smile</a></li>
+<li><a href="#">Ghost</a></li>
+<li><a href="#">Love Me</a></li>
+<li><a href="#">This Moment</a></li>
+<li><a href="#">Double Rainbow</a></li>
+<li><a href="#">By The Grace Of God</a></li>
+<li><a href="#">Spiritual</a></li>
+<li><a href="#">It takes Two</a></li>
+<li><a href="#">Choose Your Battles</a></li>
+
+<li><a href"#" class="header">Buttons</a>
+<li><a href="htmal.music">Home</a></li>
+
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+  </body>
+</html>
