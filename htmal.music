@@ -113,8 +113,7 @@ placeholder="Search for names.." title="Type in a name">
 <li><a href="Kesha.html">Kesha</a></li>
 
 <li><a href="#" class="header">L</a>
-<li><a href="#">Lady Gaga</a></li>
-<li><a href="#">Laura Marano</a></li>
+<li><a href="Gaga.html">Lady Gaga</a></li>
 
 <li><a href="#" class="header">M</a>
 <li><a href="#">Mily Cyrus</a></li>
